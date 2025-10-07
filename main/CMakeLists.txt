@@ -1,0 +1,22 @@
+idf_component_register(
+    SRCS 
+        "main.cpp"
+        "RFIDReader.cpp"
+        "ServoController.cpp"
+        "Logger.cpp"
+        "WiFiLogger.cpp"
+        "BuzzerController.cpp"
+    INCLUDE_DIRS 
+        "."
+    REQUIRES 
+        "driver"
+        "freertos"
+        "esp_wifi"
+        "esp_event"
+        "lwip"
+        "esp_netif"
+        "spi_flash"
+        "esp_timer"
+        "esp_system"
+        "nvs_flash"
+)
